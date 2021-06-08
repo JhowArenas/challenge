@@ -1,0 +1,64 @@
+footer{
+    background: #000000;
+    width: 100vw;
+    height: 213px;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#location *{
+    color: #fff;
+}
+#location div{
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+#location div::after{
+    content: '';
+    width: 44px;
+    background-color: #fff;
+    left: 0;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+}
+#location p{
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+#contact{}
+#contact a{
+    height: 38px;
+    padding: 5px 18px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;  
+    text-decoration: none;
+    border-radius: 5px;
+}
+#contact a:first-child{
+    margin-bottom: 25px;
+}
+#contact a svg{
+    margin-right: 18px;
+}
+#contact a span{
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+}
+
+#createby{}
+#createby a:first-child{
+    margin-right: 25px;
+}
