@@ -1,18 +1,20 @@
-nav{
+nav {
     background-color: #FFFFFF;
     width: 100vw;
     height: 80px;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-nav ul li{
+
+nav ul li {
     appearance: none;
     list-style: none;
     display: flex;
@@ -20,47 +22,53 @@ nav ul li{
     padding: 5px 0;
 }
 
-#logo{
+#logo {
     margin-right: 6%;
 }
 
-#search{
+#search {
     width: 50%;
     justify-content: space-between;
     border-bottom: 1px solid #7A7A7A;
 }
-#search input{
+
+#search input {
     box-shadow: 0;
-    border: none;    
+    border: none;
     font-size: 13px;
     width: 95%;
 }
-#search input:focus{
+
+#search input:focus {
     outline: none;
 }
-#search input::placeholder{
+
+#search input::placeholder {
     color: #7A7A7A
 }
 
-#account{}
-#account svg{
-    margin-right:6.5px;
+#account {}
+
+#account svg {
+    margin-right: 6.5px;
 }
-#account span{
+
+#account span {
     color: #7A7A7A;
     font-size: 13px;
     height: 16px;
 }
 
-#minicart{}
-#minicart__qtdproducts{
+#minicart {}
+
+#minicart__qtdproducts {
     width: 14px;
     height: 14px;
     margin-left: 5px;
     background-color: #F8475F;
     border-radius: 50%;
     font-weight: 700;
-    color:#fff;
+    color: #fff;
     font-size: 10px;
     text-align: center;
 }

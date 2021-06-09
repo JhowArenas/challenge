@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <Router>
         <Header />
-        {/* <Route exact path="/" component={Home} /> */}
+        <Route exact path="/" component={Home} />
         {/* <Route exact path="/search" component={Search} /> 
             <Route exact path="/foguetes" component={Catalog} /> */}
         <Footer />

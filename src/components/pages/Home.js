@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import Banner from '../snippets/Page-Home/Banner';
+import Products from '../snippets/Page-Home/Products';
+import NewsLetter from '../snippets/Page-Home/NewsLetter';
 
 function Home() {
     return (
-        <section id='page-home'>
+        <Fragment>
             <Banner />
-        </section>
+            <Products />
+            <NewsLetter />
+        </Fragment>
     );
 }
 
