@@ -44,7 +44,7 @@ const NewsLetter = () => {
     return (
         <section id="newsletter">
             <h2>Participe de nossas news com promoções e novidades!</h2>
-            <form className="container" onSubmit={Validate} >
+            <form className={window.innerWidth > 910 ? 'container' : ''} onSubmit={Validate} >
                 <input type="text" id="newslettername" name="nome" placeholder="Digite seu nome" />
                 <input type="text" id="newslettermail" name="email" placeholder="Digite seu email" />
                 <button className="send-button">Eu quero!</button>

@@ -8,6 +8,15 @@ function Navbar() {
     return (
         <nav>
             <ul className="container">
+                {window.innerWidth > 910 ? '' :
+                    <React.Fragment>
+                        <li id="menu-bt">
+                            <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 15.0154H22.5V12.5128H0V15.0154ZM0 8.75904H22.5V6.25647H0V8.75904ZM0 0V2.50257H22.5V0H0Z" fill="black" />
+                            </svg>
+                        </li>
+                    </React.Fragment>
+                }
                 <li id="logo">
                     <svg width="181" height="41" viewBox="0 0 181 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M140.158 40.9009H133.817V12.3971H140.158V40.9009Z" fill="black" />
@@ -20,9 +29,17 @@ function Navbar() {
                         <path d="M173.26 39.6905C172.836 39.2763 172.501 38.7798 172.276 38.2315C172.051 37.6832 171.94 37.0946 171.951 36.502C171.94 35.9058 172.05 35.3136 172.275 34.7614C172.501 34.2091 172.836 33.7084 173.26 33.2896C173.669 32.8562 174.164 32.5135 174.714 32.284C175.263 32.0544 175.855 31.943 176.451 31.9571C177.657 31.9583 178.813 32.4376 179.665 33.2896C180.518 34.1417 180.998 35.297 180.999 36.502C181.013 37.0972 180.901 37.6887 180.672 38.2381C180.442 38.7874 180.099 39.2823 179.665 39.6905C179.245 40.1132 178.744 40.4469 178.191 40.6718C177.639 40.8966 177.047 41.008 176.451 40.9993C175.858 41.01 175.269 40.8995 174.72 40.6744C174.172 40.4493 173.675 40.1145 173.26 39.6905Z" fill="#BFBFBF" />
                     </svg>
                 </li>
-                <SearchBar />
-                <Account />
-                <Minicart />
+                {window.innerWidth > 910 ?
+                    <React.Fragment>
+                        <SearchBar />
+                        <Account />
+                        <Minicart />
+                    </React.Fragment> :
+                    <React.Fragment>
+                        <Minicart />
+                        <SearchBar />
+                    </React.Fragment>
+                }
             </ul>
         </nav>
     );

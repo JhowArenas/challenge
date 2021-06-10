@@ -22,8 +22,10 @@ nav ul li {
     padding: 5px 0;
 }
 
-#logo {
-    margin-right: 6%;
+@media (min-width:910px) {
+    #logo {
+        margin-right: 6%;
+    }
 }
 
 #search {
@@ -71,4 +73,29 @@ nav ul li {
     color: #fff;
     font-size: 10px;
     text-align: center;
+}
+
+@media (max-width:910px) {
+    nav {
+        height: auto;
+    }
+
+    nav ul {
+        align-items: stretch;
+    }
+
+    nav ul li {
+        align-items: flex-end;
+    }
+
+    #search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #minicart svg {
+        min-width: 25px;
+        min-height: 25px;
+    }
+
 }

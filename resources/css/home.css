@@ -171,11 +171,10 @@
 }
 
 .banner-home .banner-item {
-    max-width: 0vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     transition: all .3s;
 }
@@ -184,6 +183,49 @@
     width: 100%;
 }
 
-.banner-home .banner-item.open {
-    max-width: 100vw;
+@media (max-width: 910px) {
+
+    #newsletter input,
+    #newsletter button {
+        margin: 8px 0;
+        width: 100%;
+    }
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    max-width: fit-content;
+}
+
+.slick-dots li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #bdbdbd;
+    margin: 0 5px;
+    display: flex;
+}
+
+.slick-dots li.slick-active {
+    background: #F8475F;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    background-color: transparent;
+    border: unset;
+    box-shadow: unset;
+    width: 100%;
+    height: 100%;
+}
+
+.slick-arrow {
+    background: transparent;
+    border: unset;
+    box-shadow: unset;
 }
