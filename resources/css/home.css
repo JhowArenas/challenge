@@ -158,3 +158,32 @@
     padding: 8px 28px;
     height: 48px;
 }
+
+.banner-home {
+    margin-bottom: 25px;
+    background-color: #000;
+    position: relative;
+}
+
+.banner-home .banner-list {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.banner-home .banner-item {
+    max-width: 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.banner-home .banner-item img {
+    width: 100%;
+}
+
+.banner-home .banner-item.open {
+    max-width: 100vw;
+}
